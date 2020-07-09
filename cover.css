@@ -68,28 +68,13 @@ a:hover {
 }
 
 /* Custom slanted button */
-.btn-secondary,
-.btn-secondary:focus {
-  color: #231f20;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #E7CC3C;
-  text-transform: uppercase;
-}
-
-.btn-secondary:hover {
-    background-color: #EE3E40;
-    color: #fff;
-    border-color: #EE3E40;
-}
-
-.btn-secondary {
-    border: none;
-}
 
 .button-slanted {
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
     transform: skewX(-20deg);
+    background-color: #E7CC3C;
+    border: none;
 }
 
     .button-slanted-content {
@@ -97,6 +82,14 @@ a:hover {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);  
     display: inline-block;
+    text-transform: uppercase;
+    color: #231f20;
+    text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+.button-slanted:hover {
+    background-color: #EE3E40;
+    color: #fff;
 }
 
 .cover .btn-lg {
