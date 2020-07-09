@@ -47,32 +47,43 @@
           font-size: 3.5rem;
         }
       }
+
+      .button-slanted {
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        }
+
+        .button-slanted-content {
+        -ms-transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg);  
+        display: inline-block;
+        }
     </style>
   </head>
   <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Buzzer</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">Partners</a>
-        <a class="nav-link" href="#">Careers</a>
-      </nav>
-    </div>
-  </header>
+      
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-auto">
+            <img src="images/buzzer_logo.svg" width="100" height="50" class="my-0 mr-md-auto d-inline-block align-top" alt="" loading="lazy">
+            <nav class="my-2 my-md-0 mr-md-3">
+              <a class="p-2" href="#">Partners</a>
+              <a class="p-2" href="#">Careers</a>
+            </nav>
+        </div>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Never miss another historic sports moment again.</h1>
-    <p class="lead">With Buzzer, we’re a mobile first, notification-driven platform for live sports, personalized to your interests & preferences.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Subscribe</a>
-    </p>
+  <main role="main" class="inner cover mx-auto">
+    <h1 class="cover-heading mb-4">Never miss another historic sports moment again.</h1>
+   <!-- <p class="lead">With Buzzer, we’re a mobile first, notification-driven platform for live sports, personalized to your interests & preferences.</p> -->
+    <div class="button-slanted btn btn-lg btn-secondary">
+        <span class="button-slanted-content">Subscribe</span>
+    </div>
   </main>
 
-  <footer class="mastfoot mt-auto">
+  <footer class="grandfoot mt-auto">
     <div class="inner">
-      <p>Social - <a href="#">LinkedIn</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>.</p>
+      <p>Follow us on social - <a href="#">LinkedIn</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>.</p>
     </div>
   </footer>
 </div>
