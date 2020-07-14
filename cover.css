@@ -7,7 +7,16 @@
 html,
 body {
   height: 100%;
+    background: url('landingpage3.svg');
+    background: url('transparent.png');    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #0B0B0D;
 }
+
+
 
 body {
   display: -ms-flexbox;
@@ -17,20 +26,21 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.wrapper {
-    background: url('images/landing_page_background.jpg');
+/* .wrapper {
+    background: url('ltng-background-2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-position: center; */
     background-size: cover;
-}
+} */
+
+
 
 h1 {
     font-family: proxima-nova,sans-serif;
     font-weight: 800;
     font-style: italic;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 p {
@@ -103,7 +113,7 @@ a:hover {
 /* Cover */
 .cover {
   padding: 0 1.5rem;
-  max-width: 50em;
+  width: 40em;
 }
 
 /* Footer */
@@ -115,12 +125,23 @@ a:hover {
     color: #EE3E40;
 }
 
+.lightning {color:#E7CC3C;}
+
 /* Responsive Styles */
 
 @media only screen and (max-width: 768px) {
-   h1 {font-size: 2.0rem; line-height: 1.3;}
+   h1 {font-size: 2.0rem; line-height: 1.5;}
     
    .cover {padding: 0 .5rem;}
 
    .wrapper img {width: 150px; height: 75px;}
+
+   html, body {
+    background: url('background-834w.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
+}
+
