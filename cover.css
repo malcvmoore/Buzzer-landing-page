@@ -7,7 +7,6 @@
 html,
 body {
   height: 100%;
-    background: url('landingpage3.svg');
     background: url('transparent.png');    
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,13 +41,19 @@ h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
 }
-
+h3 {
+    font-size: 1.25rem;
+}
 p {
     font-family: proxima-nova,sans-serif;
     font-weight: 400;
     font-style: normal;
     opacity: 0.76;
 }
+
+.lead {
+    font-size: 1.15rem;
+}    
 
 /* Nav */
 
@@ -79,25 +84,15 @@ a:hover {
 
 /* Custom slanted button */
 
-.button-slanted {
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    background-color: #E7CC3C;
-    border: none;
-}
 
     .button-slanted-content {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);  
     display: inline-block;
     text-transform: uppercase;
     color: #231f20;
     text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-.button-slanted:hover {
+.slant:hover {
     background-color: #EE3E40;
     color: #fff;
 }
@@ -108,6 +103,25 @@ a:hover {
     font-size: 1.0rem;
     line-height: 1.5;
     border-radius: 0;
+}
+
+
+/* Form */
+
+input[type="email" i] {
+    margin-right: -5px;
+    border-width: inherit;
+    padding: 10px;
+    width: 330px;
+}    
+
+[type=submit] {
+    -webkit-appearance: button;
+    background-color: #E7CC3C;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 10px 20px;
 }
 
 /* Cover */
@@ -131,17 +145,34 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
    h1 {font-size: 2.0rem; line-height: 1.5;}
-    
-   .cover {padding: 0 .5rem;}
+
+   .cover {padding: 0 .5rem;width: 100%;}
 
    .wrapper img {width: 150px; height: 75px;}
 
    html, body {
-    background: url('background-834w.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
+        background: url('transparent-ipad.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+   }
+
 }
 
+@media (max-width: 500px) {
+
+    .px-5 {padding-left: 1rem!important; padding-right: 1rem!important;}
+
+    input[type="email" i] { width: 210px; }
+
+    [type=submit] { padding: 10px 15px; }
+
+    html, body {
+        background: url('transparent-phone.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+ }
